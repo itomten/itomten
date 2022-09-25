@@ -1,0 +1,13 @@
+curl -fsSL https://get.docker.com/rootless | sh
+
+[INFO] Installed docker.service successfully.
+[INFO] To control docker.service, run: `systemctl --user (start|stop|restart) docker.service`
+[INFO] To run docker.service on system startup, run: `sudo loginctl enable-linger roffe`
+
+[INFO] Creating CLI context "rootless"
+Successfully created context "rootless"
+
+[INFO] Make sure the following environment variables are set (or add them to ~/.bashrc):
+
+export PATH=/home/roffe/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
